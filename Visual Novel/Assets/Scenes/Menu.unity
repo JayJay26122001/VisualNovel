@@ -227,6 +227,7 @@ GameObject:
   - component: {fileID: 32299576}
   - component: {fileID: 32299575}
   - component: {fileID: 32299574}
+  - component: {fileID: 32299577}
   m_Layer: 5
   m_Name: T_CreditsButton
   m_TagString: Untagged
@@ -251,7 +252,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
   m_AnchoredPosition: {x: 350, y: -250}
-  m_SizeDelta: {x: 600, y: 60}
+  m_SizeDelta: {x: 350, y: 60}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &32299574
 MonoBehaviour:
@@ -395,6 +396,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 32299572}
   m_CullTransparentMesh: 1
+--- !u!114 &32299577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 32299572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1660020323}
+          m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
+          m_MethodName: UpscaleButtons
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 32299572}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1660020323}
+          m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
+          m_MethodName: DownscaleButtons
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 32299572}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &74713087
 GameObject:
   m_ObjectHideFlags: 0
@@ -407,6 +453,7 @@ GameObject:
   - component: {fileID: 74713091}
   - component: {fileID: 74713090}
   - component: {fileID: 74713089}
+  - component: {fileID: 74713092}
   m_Layer: 5
   m_Name: T_QuitGameButton
   m_TagString: Untagged
@@ -431,7 +478,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
   m_AnchoredPosition: {x: 350, y: -350}
-  m_SizeDelta: {x: 600, y: 60}
+  m_SizeDelta: {x: 350, y: 60}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &74713089
 MonoBehaviour:
@@ -587,6 +634,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 74713087}
   m_CullTransparentMesh: 1
+--- !u!114 &74713092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 74713087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1660020323}
+          m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
+          m_MethodName: UpscaleButtons
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 74713087}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1660020323}
+          m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
+          m_MethodName: DownscaleButtons
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 74713087}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &393625549
 GameObject:
   m_ObjectHideFlags: 0
@@ -599,6 +691,7 @@ GameObject:
   - component: {fileID: 393625553}
   - component: {fileID: 393625552}
   - component: {fileID: 393625551}
+  - component: {fileID: 393625554}
   m_Layer: 5
   m_Name: T_LoadButton
   m_TagString: Untagged
@@ -623,7 +716,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
   m_AnchoredPosition: {x: 350, y: 50}
-  m_SizeDelta: {x: 600, y: 60}
+  m_SizeDelta: {x: 350, y: 60}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &393625551
 MonoBehaviour:
@@ -767,6 +860,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 393625549}
   m_CullTransparentMesh: 1
+--- !u!114 &393625554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 393625549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1660020323}
+          m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
+          m_MethodName: UpscaleButtons
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 393625549}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1660020323}
+          m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
+          m_MethodName: DownscaleButtons
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 393625549}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &510319836
 GameObject:
   m_ObjectHideFlags: 0
@@ -779,6 +917,7 @@ GameObject:
   - component: {fileID: 510319840}
   - component: {fileID: 510319839}
   - component: {fileID: 510319838}
+  - component: {fileID: 510319841}
   m_Layer: 5
   m_Name: T_OptionsButton
   m_TagString: Untagged
@@ -803,7 +942,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
   m_AnchoredPosition: {x: 350, y: -150}
-  m_SizeDelta: {x: 600, y: 60}
+  m_SizeDelta: {x: 350, y: 60}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &510319838
 MonoBehaviour:
@@ -947,6 +1086,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 510319836}
   m_CullTransparentMesh: 1
+--- !u!114 &510319841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 510319836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1660020323}
+          m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
+          m_MethodName: UpscaleButtons
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 510319836}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1660020323}
+          m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
+          m_MethodName: DownscaleButtons
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 510319836}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &703770781
 GameObject:
   m_ObjectHideFlags: 0
@@ -1034,6 +1218,7 @@ GameObject:
   - component: {fileID: 857316786}
   - component: {fileID: 857316785}
   - component: {fileID: 857316784}
+  - component: {fileID: 857316787}
   m_Layer: 5
   m_Name: T_GalleryButton
   m_TagString: Untagged
@@ -1058,7 +1243,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
   m_AnchoredPosition: {x: 350, y: -50}
-  m_SizeDelta: {x: 600, y: 60}
+  m_SizeDelta: {x: 350, y: 60}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &857316784
 MonoBehaviour:
@@ -1202,6 +1387,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 857316782}
   m_CullTransparentMesh: 1
+--- !u!114 &857316787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 857316782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1660020323}
+          m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
+          m_MethodName: UpscaleButtons
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 857316782}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1660020323}
+          m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
+          m_MethodName: DownscaleButtons
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 857316782}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1525236254
 GameObject:
   m_ObjectHideFlags: 0
@@ -1694,6 +1924,7 @@ GameObject:
   - component: {fileID: 2118157070}
   - component: {fileID: 2118157069}
   - component: {fileID: 2118157071}
+  - component: {fileID: 2118157072}
   m_Layer: 5
   m_Name: T_NewGameButton
   m_TagString: Untagged
@@ -1718,7 +1949,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
   m_AnchoredPosition: {x: 350, y: 150}
-  m_SizeDelta: {x: 600, y: 60}
+  m_SizeDelta: {x: 350, y: 60}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &2118157069
 MonoBehaviour:
@@ -1874,6 +2105,51 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &2118157072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2118157067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1660020323}
+          m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
+          m_MethodName: UpscaleButtons
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 2118157067}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1660020323}
+          m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
+          m_MethodName: DownscaleButtons
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 2118157067}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

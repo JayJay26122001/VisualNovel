@@ -14,4 +14,16 @@ public class MenuController : MonoBehaviour
         Debug.Log("Leaving Game!");
         Application.Quit();
     }
+
+    public void UpscaleButtons(GameObject obj)
+    {
+        RectTransform rectTransform = obj.GetComponent<RectTransform>();
+        LeanTween.scale(obj, new Vector3(1.25f, 1.25f, 1.25f), 0.25f).setEase(LeanTweenType.easeOutQuad);
+    }
+
+    public void DownscaleButtons(GameObject obj)
+    {
+        RectTransform rectTransform = obj.GetComponent<RectTransform>();
+        LeanTween.scale(obj, new Vector3(1f, 1f, 1f), 0.25f).setEase(LeanTweenType.easeOutQuad);
+    }
 }
