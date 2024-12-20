@@ -26,4 +26,16 @@ public class MenuController : MonoBehaviour
         RectTransform rectTransform = obj.GetComponent<RectTransform>();
         LeanTween.scale(obj, new Vector3(1f, 1f, 1f), 0.25f).setEase(LeanTweenType.easeOutQuad);
     }
+
+    public void OpenPanel(GameObject panel)
+    {
+        panel.SetActive(true);
+    }
+
+    public void ClosePanel(GameObject panel)
+    {
+        panel.SetActive(false);
+    }
+
+
 }
